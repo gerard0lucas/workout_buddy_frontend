@@ -1,38 +1,238 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html { 
+  background: url(https://thumbs.dreamstime.com/b/dark-hexagon-wallpaper-background-d-render-dark-hexagon-wallpaper-background-d-render-160588440.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background: transparent;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body, input, button {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+.nav-links{
+  color:black;
+  text-decoration: none;
+  background-color: white;
+  margin: 0 12px;
+  padding: 4px 10px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+}
+.nav-links:hover{
+  color:white;
+  background-color: black;
+  transition: 0.5s;
+  border: 1px solid;
+}
+.nav{
+  align-items: center;
+  padding: 16px 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+.nav h1{
+  color: white;
+  text-decoration: none;
+}
+.home{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+}
+.workout{
+  text-transform: capitalize;
   display: flex;
   flex-direction: column;
+  gap: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+}
+.workoutdetails{
+  background-color: black;
   color: white;
+  width: 600px;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.workoutload, .workoutreps{
+  margin-left: 15px;
+  font-size: 20px;
+}
+.workouttitle{
+  font-size: 25px;
+}
+.det{
+  display: flex;
+  gap: 30px;
+}
+.createform label{
+  color: azure;
+  font-size: 16px;
+  margin-top: 16px;
+}
+.createform{
+  color: azure;
+  display: flex;
+  flex-direction: column;
+ }
+ .createform input{
+  height: 22px;
+  padding-left: 4px;
+}
+.createform button{
+  margin-top: 16px;
+  color:white;
+  background-color: black;
+  padding: 7px 10px;
+  font-size: 16px;
+  border: 1px solid; 
+  cursor: pointer;
+}
+.createform button:hover{
+  color:black;
+  background-color: white;
+  border: 1px solid;
+  transition: 0.5s;
+}
+.deleteworkout{
+  padding:3px 6px;
+  margin-left: auto;
+  color:black;
+  background-color: white;
+  transition: 0.5s;
+  border: 2px solid;
+  font-size: 15px;
+  cursor: pointer;
+}
+.deleteworkout:hover{
+  color:white;
+  background-color: black;
+  border: 2px solid;
+}
+/* ...................................................................... */
+.signup{
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+.signup input{
+  padding: 0 0 0 9px;
+  height: 30px;
+}
+.signup h3{
+  color: azure;
+font-size: 35px;
+}
+.signup label{
+  color: azure;
+}
+.signup button{
+  margin-top: 16px;
+  color:white;
+  background-color: black;
+  padding: 10px 10px;
+  font-size: 18px;
+  border: 1px solid;
+}
+.signup button:hover{
+  color:black;
+  background-color: white;
+  transition: 0.5s;
+}
+.background{
+  background: url(https://i.pinimg.com/736x/b2/73/34/b273344a354c91b8e0d43320fdf862e6.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  
+  justify-content: center;
+  
+}
+.error{
+  color: red;
+  font-size: 18px;
+  background-color: pink;
+  padding: 8px;
+  border: 3px solid red;
+  border-radius: 8px;
+  text-transform:capitalize;
+}
+.ee{
+  color: white;
+  
+}
+.head{
+  display: flex;
+}
+.wh{
+  color: rgb(0, 0, 0);
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width : 875px) {
+  .nav{
+    justify-content: space-between;
+    padding: 16px 20px;
+  }
+  .nav h1{
+    font-size: 26px;
+    color: white;
+    text-decoration: none;
+  }
+  .workoutdetails{
+    width: 95%;
+  } 
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width : 540px) {
+  .nav h1{
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
   }
-  to {
-    transform: rotate(360deg);
+  .ee{
+    display: none;
+  }
+  .home{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .nav-links{
+    color:black;
+    text-decoration: none;
+    background-color: white;
+    margin: 0 4px;
+    padding: 4px 10px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+  }
+  
+  .workoutdetails{
+    width: 95%;
   }
 }
+
