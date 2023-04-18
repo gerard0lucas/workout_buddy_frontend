@@ -12,7 +12,7 @@ const handledelete =async ()=>{
         return
     }
 
-    const res = await fetch(`/api/workouts/${workout._id}`,{
+    const res = await fetch(`https://work-bxsi.onrender.com/api/workouts/${workout._id}`,{
         method:"delete",
         headers:{
             'authorization':`Bearer ${user.token}`

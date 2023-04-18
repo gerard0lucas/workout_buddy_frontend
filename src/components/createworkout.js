@@ -22,7 +22,7 @@ const createworkout = () => {
 
         const workout = { title, reps, load, email}
         
-        const response = await fetch("/api/workouts",{
+        const response = await fetch("https://work-bxsi.onrender.com/api/workouts",{
             method:'post',
             headers:{'content-Type':'application/json',
                     'authorization':`Bearer ${user.token}`},

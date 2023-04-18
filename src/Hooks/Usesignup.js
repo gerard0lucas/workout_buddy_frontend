@@ -10,7 +10,7 @@ export const useSignup = () =>{
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch('/api/users/signup',{
+        const response = await fetch('https://work-bxsi.onrender.com/api/users/signup',{
             method: 'post',
             headers: {'content-type':'application/json'},
             body: JSON.stringify({email,password})

@@ -6,12 +6,14 @@ import { useWorkoutsContext } from "../Hooks/useWorkoutContext";
 import { useAuthContext } from "../Hooks/UseAuthCintext";
 
 
+
+
 const home = () => {
 const {workouts, dispatch} = useWorkoutsContext()
 const {user} = useAuthContext()
 useEffect(()=>{
     const fetchworkouts = async()=>{
-        const res =await fetch('/api/workouts',{
+        const res =await fetch('https://work-bxsi.onrender.com/api/workouts',{
             headers:{
                 'authorization':`Bearer ${user.token}`
             }

@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/SignUp";
 import { useAuthContext } from "./Hooks/UseAuthCintext";
 
+
 // .............................................................................
 function App() {
   const {user} = useAuthContext()
