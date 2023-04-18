@@ -16,12 +16,16 @@ useEffect(()=>{
         const res =await fetch('https://work-bxsi.onrender.com/api/workouts',{
             headers:{
                 'authorization':`Bearer ${user.token}`
-            }
-        }); 
-    const data =await res.json()
+            }   
+        })
+        
 
-    if(res.ok){
+    try{
+        const data =await res.json()
         dispatch({type: 'SET_WORKOUTS', payload: data})
+    }
+    catch(err){
+        console.log(err);
     }
     }
 
