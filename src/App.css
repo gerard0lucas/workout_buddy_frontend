@@ -49,9 +49,9 @@ body, input, button {
 }
 .home{
   display: flex;
-  width: 90%;
+  width: 60%;
   margin: auto;
-  justify-content: center;
+  justify-content: space-around;
   gap: 30px;
   padding: 20px 0;
 }
@@ -63,7 +63,7 @@ body, input, button {
   align-items: center;
   
 }
-.workoutdetails{
+.workoutdetails,.fetch_load{
   background-color: black;
   color: white;
   width: 600px;
@@ -93,14 +93,16 @@ body, input, button {
   color: azure;
   display: flex;
   flex-direction: column;
+  margin-left: auto;
  }
  .createform input{
   height: 22px;
   padding-left: 4px;
 }
-.createform button{
+.createform button,.subwaite{
   margin-top: 16px;
   color:white;
+  text-align: center;
   background-color: black;
   padding: 7px 10px;
   font-size: 16px;
@@ -112,6 +114,14 @@ body, input, button {
   background-color: white;
   border: 1px solid;
   transition: 0.5s;
+}
+.card_loading{
+  margin-left: auto;
+}
+.svg{
+  width: 200px;
+  height: 200px;
+  
 }
 .deleteworkout{
   padding:3px 6px;
@@ -183,7 +193,23 @@ font-size: 35px;
 }
 .ee{
   color: white;
-  
+}
+.logwaite{
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  margin: 18px auto;
+}
+.waite{
+  width: 80%;
+  color: #070707;
+  font-size: 22px;
+  text-align: center;
+  margin: 15px auto;
+  font-weight: bold;
+  background-color: aliceblue;
+  border-radius: 18px; ;
+  padding: 4px 0;
 }
 .head{
   display: flex;
@@ -202,7 +228,10 @@ font-size: 35px;
     color: white;
     text-decoration: none;
   }
-  .workoutdetails{
+  .home{
+    width: 80%;
+  }
+  .workoutdetails,.fetch_load{
     width: 95%;
   } 
 

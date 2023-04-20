@@ -21,8 +21,8 @@ const Signup = () => {
             <input type="email" value={email} placeholder="Email" onChange={(e)=>setemail(e.target.value)} />
             <label>Password</label>
             <input type="password" value={password} placeholder="Password" onChange={(e)=>setpassword(e.target.value)} />
-            <button>SignUP</button>
-            {isLoading && <div>{isLoading}</div>}
+            {!isLoading && <button>Login</button>}
+        {isLoading && <div className="waite">Please waite...</div>}
         </form>
         </div>
      );
