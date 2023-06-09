@@ -6,7 +6,7 @@
 #### By Gerard Lucas
 
 
-### Preview of paytm clone👇
+### Preview of Workout Buddy App👇
 ![screen shot](https://incredible-twilight-227166.netlify.app/static/media/project1.aca0225c983d09bd86d2.png)
 ## **Things I learned from this Project ..**
 - I Learned about How to work with **react and react context**.
